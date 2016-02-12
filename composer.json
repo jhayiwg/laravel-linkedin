@@ -1,8 +1,8 @@
 {
-    "name": "mauri870/laravel-linkedin",
+    "name": "artesaos/laravel-linkedin",
     "type": "library",
-    "description": "Linkedin API integration for Laravel Framework",
-    "keywords": ["LinkedIn","Laravel Framework","API","Client","SDK","Integration","REST"],
+    "description": "Linkedin API integration for Laravel and Lumen 5",
+    "keywords": ["LinkedIn","Laravel Framework","Lumen","API","Client","SDK","Integration","REST"],
     "license": "MIT",
     "authors": [
         {
@@ -27,7 +27,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mauri870\\LinkedIn\\": "src/Mauri870/LinkedIn/",
+            "Mauri870\\LinkedIn\\": "src/Artesaos/LinkedIn/",
             "Mauri870\\LinkedIn\\Tests\\": "tests"
         }
     }

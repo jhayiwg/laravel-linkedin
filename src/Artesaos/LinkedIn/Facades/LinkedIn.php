@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Linkedin API for Laravel Framework
  *
@@ -8,7 +7,13 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  */
 
-return [
-    'api_key' => env('LINKEDIN_KEY','yourapikey'),
-    'api_secret' => env('LINKEDIN_SECRET','yourapisecret'),
-];
+namespace Artesaos\LinkedIn\Facades;
+
+use Illuminate\Support\Facades\Facade;
+
+class LinkedIn extends Facade {
+
+    protected static function getFacadeAccessor() {
+        return 'LinkedIn';
+    }
+}
