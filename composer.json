@@ -10,7 +10,7 @@
             "email": "mauri870@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "require": {
         "php": ">=5.5.9",
         "illuminate/contracts": "~5.1 || ~5.2",
@@ -27,8 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Mauri870\\LinkedIn\\": "src/Artesaos/LinkedIn/",
-            "Mauri870\\LinkedIn\\Tests\\": "tests"
+            "Artesaos\\LinkedIn\\": "src/Artesaos/LinkedIn/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Artesaos\\LinkedIn\\Tests\\": "tests"
         }
     }
 }
