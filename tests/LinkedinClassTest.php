@@ -7,10 +7,10 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  */
 
-namespace Mauri870\LinkedIn\Tests;
+namespace Artesaos\LinkedIn\Tests;
 
-use Mauri870\LinkedIn\Facades\LinkedIn;
-use Mauri870\LinkedIn\LinkedInLaravel;
+use Artesaos\LinkedIn\Facades\LinkedIn;
+use Artesaos\LinkedIn\LinkedInLaravel;
 
 class LinkedinClassTest extends TestCase
 {
@@ -24,19 +24,13 @@ class LinkedinClassTest extends TestCase
 
     public function setUp()
     {
-<<<<<<< HEAD
         parent::setUp();
         $this->linkedin = new LinkedInLaravel(self::APP_ID, self::APP_SECRET);
-=======
-        $this->linkedin = new \Artesaos\LinkedIn\LinkedInLaravel(self::APP_ID, self::APP_SECRET);
->>>>>>> master
     }
-
     public function testConstructor()
     {
         $this->assertEquals(get_parent_class($this->linkedin), \Happyr\LinkedIn\LinkedIn::class);
     }
-
     public function testCheckIfIsAuthenticated()
     {
         $this->assertEquals(false, LinkedIn::isAuthenticated());

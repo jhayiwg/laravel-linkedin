@@ -5,10 +5,10 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  */
 
-namespace Mauri870\LinkedIn\Tests;
+namespace Artesaos\LinkedIn\Tests;
 
-use Mauri870\LinkedIn\Facades\LinkedIn;
-use Mauri870\LinkedIn\LinkedinServiceProvider;
+use Artesaos\LinkedIn\Facades\LinkedIn;
+use Artesaos\LinkedIn\LinkedinServiceProvider;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
