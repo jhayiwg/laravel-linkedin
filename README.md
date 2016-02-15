@@ -34,7 +34,7 @@ chmod 755 puli.phar
 Install Puli and its dependencies using this command:
 
 ```bash
-composer require puli/cli:^1.0@beta puli/composer-plugin:^1.0.0@beta puli/repository:^1.0-@beta puli/discovery:^1.0@beta puli/manager:^1.0@beta puli/url-generator:^1.0@beta
+composer require puli/composer-plugin:^1.0.0@beta puli/repository:^1.0-@beta puli/discovery:^1.0@beta puli/manager:^1.0@beta puli/url-generator:^1.0@beta
 ```
 
 #### Install with composer
