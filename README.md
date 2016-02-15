@@ -23,24 +23,19 @@ composer require php-http/guzzle6-adapter:dev-master
 #### Auto discovery with Puli 
 
 This library has a dependency on php-http/discovery that will find a HTTP client and a library that can create PSR-7 messages that you already have installed. It uses [Puli](http://docs.puli.io) for the actual discovery.
-Install Puli and its dependencies using this command:
 
-```bash
-composer require puli/composer-plugin:^1.0.0@beta puli/repository:^1.0-@beta puli/discovery:^1.0@beta puli/manager:^1.0@beta puli/url-generator:^1.0@beta
-```
-
-If you receive an error like:
-
-`Warning: Plugin initialization failed: The "puli"/"puli.phar" command could not be found.`
-
-Try download the puli.phar on root folder of your project and add 755 permissions to puli.phar
+Download the puli.phar on root folder of your project and add 755 permissions to puli.phar:
 
 ```bash
 wget https://github.com/puli/cli/releases/download/1.0.0-beta10/puli.phar
 chmod 755 puli.phar
 ```
 
-After, remove your composer.lock and vendor folder and run `composer install`
+Install Puli and its dependencies using this command:
+
+```bash
+composer require puli/cli:^1.0@beta puli/composer-plugin:^1.0.0@beta puli/repository:^1.0-@beta puli/discovery:^1.0@beta puli/manager:^1.0@beta puli/url-generator:^1.0@beta
+```
 
 #### Install with composer
 
